@@ -4,7 +4,7 @@ package com.example.aoc;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-public class Day1_1 {
+public class Day01_1 {
 
 
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class Day1_1 {
                 """;
 
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("input/day1.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("input/day01.txt"));
             long result = 0;
 //            for (String line : testText.split("\n")) {
             for (String line : reader.lines().toList()) {

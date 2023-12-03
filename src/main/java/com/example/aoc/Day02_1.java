@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.util.Arrays;
 import java.util.Map;
 
-public class Day2_1 {
+public class Day02_1 {
 
 
     public static void main(String[] args) {
@@ -26,7 +26,7 @@ Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green
         try {
             long result = 0;
             long gameNumber = 0;
-            BufferedReader reader = new BufferedReader(new FileReader("input/day2.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("input/day02.txt"));
             for (String line : reader.lines().toList()) {
 //            for (String line : testText.split("\n")) {
                 ++gameNumber;

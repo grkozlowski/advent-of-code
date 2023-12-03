@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Day1_2 {
+public class Day01_2 {
 
     public static void main(String[] args) {
         String testText = """
@@ -31,7 +31,7 @@ public class Day1_2 {
         numbers.put("nine",'9');
 
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("input/day1.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("input/day01.txt"));
             long result = 0;
 //            for (String line : testText.split("\n")) {
             for (String line : reader.lines().toList()) {

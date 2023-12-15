@@ -43,7 +43,7 @@ QQQJA 483
         }
     }
 
-    static class Pair {
+    private static class Pair {
         private final String key;
         private final Long value;
 

@@ -6,3 +6,7 @@
 # Story 10
 * Write your own implementation of GeneralPath
 * Create visualization
+
+# Story 18
+* Used Shoelace formula + Pick's theory
+* Very similar to day 10

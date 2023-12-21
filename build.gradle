@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id 'io.freefair.lombok' version "8.4"
 }
 
 group 'com.example'
@@ -17,4 +18,9 @@ tasks.withType(JavaCompile) {
 application {
     mainModule = 'com.example.aoc'
     mainClass = 'com.example.aoc.Day1_1'
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
 }

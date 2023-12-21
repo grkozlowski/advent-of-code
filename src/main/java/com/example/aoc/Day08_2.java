@@ -5,6 +5,8 @@ import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static com.example.aoc.utils.Math.lcm;
+
 public class Day08_2 {
 
     private static final String testText = """
@@ -79,35 +81,5 @@ XXX = (XXX, XXX)
         }
 
         return subResult;
-    }
-
-    private static long lcm(long a, long b)
-    {
-        return a * (b / gcd(a, b));
-    }
-
-    private static long lcm(Long[] input)
-    {
-        long result = input[0];
-        for(int i = 1; i < input.length; i++) result = lcm(result, input[i]);
-        return result;
-    }
-
-    private static long gcd(long a, long b)
-    {
-        while (b > 0)
-        {
-            long temp = b;
-            b = a % b; // % is remainder
-            a = temp;
-        }
-        return a;
-    }
-
-    private static long gcd(long[] input)
-    {
-        long result = input[0];
-        for(int i = 1; i < input.length; i++) result = gcd(result, input[i]);
-        return result;
     }
 }

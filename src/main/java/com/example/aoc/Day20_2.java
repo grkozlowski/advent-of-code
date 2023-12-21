@@ -10,20 +10,12 @@ import static com.example.aoc.utils.Math.lcm;
 
 public class Day20_2 {
 
-    private static final String testText = """
-broadcaster -> a
-%a -> inv, con
-&inv -> b
-%b -> con
-&con -> output
-                """;
     private static long result = 0L;
 
     public static void main(String[] args) {
 
         try {
             BufferedReader reader = new BufferedReader(new FileReader("input/day20.txt"));
-//            BufferedReader reader = new BufferedReader(new StringReader(testText));
             List<String> input = reader.lines().toList();
 
             Map<String, Module> modules = new HashMap<>();

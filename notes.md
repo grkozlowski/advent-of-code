@@ -10,3 +10,8 @@
 # Story 18
 * Used Shoelace formula + Pick's theory
 * Very similar to day 10
+
+# Story 23
+* Brute force - 6min 27sec
+* Try dynamic programming or memorisation
+* Try edge compaction

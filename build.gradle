@@ -21,6 +21,8 @@ application {
 }
 
 dependencies {
+    implementation 'org.jgrapht:jgrapht-core:1.5.2'
     compileOnly 'org.projectlombok:lombok:1.18.30'
     annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
 }

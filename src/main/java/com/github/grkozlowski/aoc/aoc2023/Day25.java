@@ -14,7 +14,7 @@ import static com.github.grkozlowski.aoc.aoc2023.YearConstantValues.INPUT_FOLDER
 public class Day25 {
 
     private static final String DAY_NUMBER = "25";
-    private static final InputType inputType = InputType.FILE;
+    private static final InputType INPUT_TYPE = InputType.LARGE;
     private static final String testText = """
 jqt: rhn xhk nvd
 rsh: frs pzl lsr
@@ -36,7 +36,7 @@ frs: qnr lhk lsr
 
         try {
             BufferedReader reader;
-            if (InputType.FILE.equals(inputType)) {
+            if (InputType.LARGE.equals(INPUT_TYPE)) {
                 reader = new BufferedReader(new FileReader(INPUT_FOLDER_PREFIX + "day" + DAY_NUMBER + ".txt"));
             } else {
                 reader = new BufferedReader(new StringReader(testText));

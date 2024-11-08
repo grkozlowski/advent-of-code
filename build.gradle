@@ -16,8 +16,8 @@ tasks.withType(JavaCompile) {
 }
 
 application {
-    mainModule = 'com.example.aoc'
-    mainClass = 'com.example.aoc.Day1_1'
+    mainModule = 'com.github.grkozlowski.aoc'
+    mainClass = 'com.github.grkozlowski.aoc.aoc2023.Day1_1'
 }
 
 dependencies {

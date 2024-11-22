@@ -26,7 +26,7 @@ public class Day01_2 {
             Queue<Long> pq = new PriorityQueue<>(Long::compareTo);
             long subSum = 0L;
             for (String line : input) {
-                if (line.equals("")) {
+                if (line.isEmpty()) {
                     pq.add(subSum);
                     subSum = 0L;
                     if (pq.size() == 4) {
